@@ -1,1 +1,84 @@
-Hello World
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="https://cdn.jsdelivr.net/npm/animejs@3.0.1/lib/anime.min.js"></script>
+        <title>Demo</title>
+    </head>
+    <body>
+        <!-- <h1>Hello world demo with kenyan flag colors</h1> -->
+        <h1 class="word">  
+            <span class="letters">
+                <span class="l">H</span>
+                <span class="l2">E</span>
+                <span class="l3">L</span>
+                <span class="ll">L</span>
+                <span class="l4">O</span>
+                <span class="l5">!</span>
+
+                <span class="l6">W</span>
+                <span class="l7">O</span>
+                <span class="l8">R</span>
+                <span class="l9">L</span>
+                <span class="l10">D</span>
+            </span>
+
+        </h1>
+       <script>
+           let animation = anime.timeline({loop:true})
+                animation.add({
+                            targets: '.word .letters',
+                            scale: [0.2,1],
+                            opacity: [5,1],
+                            easing: "easeOutExpo",
+                            duration: 1000,
+                        })   
+       </script>
+        
+    </body>
+<style>
+    word{
+        font-weight: 900;
+        font-size: 3.5em;
+    }
+    .word .letters{
+        display: inline-block;
+        line-height: 2em;
+        /* color: burlywood; */
+    }
+    .l{
+      color:green;
+    }
+    .l2{
+      color:red;
+    }
+    .l3{
+        color:black;
+    }
+    .ll{
+        color: green;
+    }
+    .l4{
+        color:red;
+    }
+    .l5{
+        color: black;
+    }
+    .l6{
+        color: green;
+    }
+  
+    .l7{
+        color:red;
+    }
+    .l8{
+        color: black;
+    }
+    .l9{
+        color: green;
+    }
+    .l10{
+        color:red;
+    }
+   
+</style>
+</html>
